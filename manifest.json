@@ -1,0 +1,19 @@
+{
+    "name":"MLWBD Bypass",
+    "version":"1.0.0",
+    "manifest_version":3,
+    "description":"Bypass waiting on mlwbd web page",
+    "content_scripts":[
+        {
+            "js":["init.js"],
+            "matches":["<all_urls>"]
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+      },
+    "permissions": ["storage"],
+    "icons":{
+        "64": "logo.png"
+    }
+}
